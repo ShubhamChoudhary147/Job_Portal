@@ -73,6 +73,7 @@ const PostJob = () => {
                                 value={input.title}
                                 onChange={changeEventHandler}
                                 className="focus-visible:ring-offset-0 focus-visible:ring-0 my-1"
+                                placeholder="Frontend Developer"
                             />
                         </div>
                         <div>
@@ -83,6 +84,7 @@ const PostJob = () => {
                                 value={input.description}
                                 onChange={changeEventHandler}
                                 className="focus-visible:ring-offset-0 focus-visible:ring-0 my-1"
+                                placeholder="I am looking for a frontend developer"
                             />
                         </div>
                         <div>
@@ -93,6 +95,7 @@ const PostJob = () => {
                                 value={input.requirements}
                                 onChange={changeEventHandler}
                                 className="focus-visible:ring-offset-0 focus-visible:ring-0 my-1"
+                                placeholder="React, Node, Express"
                             />
                         </div>
                         <div>
@@ -103,6 +106,7 @@ const PostJob = () => {
                                 value={input.salary}
                                 onChange={changeEventHandler}
                                 className="focus-visible:ring-offset-0 focus-visible:ring-0 my-1"
+                                placeholder="50000"
                             />
                         </div>
                         <div>
@@ -113,6 +117,7 @@ const PostJob = () => {
                                 value={input.location}
                                 onChange={changeEventHandler}
                                 className="focus-visible:ring-offset-0 focus-visible:ring-0 my-1"
+                                placeholder="New York"
                             />
                         </div>
                         <div>
@@ -123,6 +128,7 @@ const PostJob = () => {
                                 value={input.jobType}
                                 onChange={changeEventHandler}
                                 className="focus-visible:ring-offset-0 focus-visible:ring-0 my-1"
+                                placeholder="Full Time"
                             />
                         </div>
                         <div>
@@ -133,6 +139,7 @@ const PostJob = () => {
                                 value={input.experience}
                                 onChange={changeEventHandler}
                                 className="focus-visible:ring-offset-0 focus-visible:ring-0 my-1"
+                                placeholder="2"
                             />
                         </div>
                         <div>
@@ -143,6 +150,7 @@ const PostJob = () => {
                                 value={input.position}
                                 onChange={changeEventHandler}
                                 className="focus-visible:ring-offset-0 focus-visible:ring-0 my-1"
+                                placeholder="100"
                             />
                         </div>
                         {
@@ -156,7 +164,7 @@ const PostJob = () => {
                                             {
                                                 companies.map((company) => {
                                                     return (
-                                                        <SelectItem value={company?.name?.toLowerCase()}>{company.name}</SelectItem>
+                                                        <SelectItem key={company._id} value={company?.name?.toLowerCase()}>{company.name}</SelectItem>
                                                     )
                                                 })
                                             }

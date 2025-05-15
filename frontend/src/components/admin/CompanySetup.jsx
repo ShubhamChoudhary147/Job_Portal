@@ -94,6 +94,7 @@ const CompanySetup = () => {
                                 name="name"
                                 value={input.name}
                                 onChange={changeEventHandler}
+                                placeholder="Microsoft"
                             />
                         </div>
                         <div>
@@ -103,6 +104,7 @@ const CompanySetup = () => {
                                 name="description"
                                 value={input.description}
                                 onChange={changeEventHandler}
+                                placeholder="A leading tech company"
                             />
                         </div>
                         <div>
@@ -112,6 +114,7 @@ const CompanySetup = () => {
                                 name="website"
                                 value={input.website}
                                 onChange={changeEventHandler}
+                                placeholder="www.microsoft.com"
                             />
                         </div>
                         <div>
@@ -121,6 +124,7 @@ const CompanySetup = () => {
                                 name="location"
                                 value={input.location}
                                 onChange={changeEventHandler}
+                                placeholder="Hyderabad, India"
                             />
                         </div>
                         <div>
