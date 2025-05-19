@@ -80,8 +80,8 @@ const Login = () => {
                             placeholder="shm@1234"
                         />
                     </div>
-                    <div className='flex items-center justify-between'>
-                        <RadioGroup className="flex items-center gap-4 my-5">
+                    <div className='flex flex-col md:flex-row items-start md:items-center justify-between gap-4'>
+                        <RadioGroup className="flex flex-col sm:flex-row items-start sm:items-center gap-4 my-5 w-full">
                             <div className="flex items-center space-x-2">
                                 <Input
                                     type="radio"
